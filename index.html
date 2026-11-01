@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSpend - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-body">
+
+    <div class="auth-container">
+
+        <div class="brand">
+            <h2 class="brand-logo">
+    <span class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+
+            <path d="M3 6.5A2.5 2.5 0 0 1 5.5 4H20"
+                  stroke="white" stroke-width="2"
+                  stroke-linecap="round"/>
+
+            <path d="M3 6.5V18a2 2 0 0 0 2 2h15V7H5.5A2.5 2.5 0 0 1 3 6.5Z"
+                  stroke="white" stroke-width="2"
+                  stroke-linejoin="round"/>
+
+            <path d="M16 12h4v4h-4a2 2 0 0 1 0-4Z"
+                  stroke="white" stroke-width="2"/>
+
+            <circle cx="17" cy="14" r="0.7" fill="white"/>
+        </svg>
+    </span>
+    <span>SmartSpend</span>
+</h2>
+            <p>Track • Save • Grow</p>
+        </div>
+
+        <div class="auth-box">
+
+            <!-- LOGIN -->
+            <div class="auth-card">
+
+                <h2>🔐 Login</h2>
+
+                <p>Welcome back! Login to manage your expenses.</p>
+
+                <form onsubmit="login(event)">
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Email address"
+                        required
+                    >
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Password"
+                        required
+                    >
+
+                    <button type="submit">
+                        Login
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- SIGN UP -->
+            <div class="auth-card">
+
+                <h2>👤 Sign Up</h2>
+
+                <p>Create your SmartSpend account.</p>
+
+                <form onsubmit="signup(event)">
+
+                    <input
+                        type="text"
+                        id="signupName"
+                        placeholder="Full Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        placeholder="Email address"
+                        required
+                    >
+
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        placeholder="Password"
+                        required
+                    >
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm Password"
+                        required
+                    >
+
+                    <button type="submit">
+                        Create Account
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
